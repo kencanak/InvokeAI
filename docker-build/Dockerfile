@@ -53,5 +53,5 @@ WORKDIR     /stable-diffusion
 RUN         python3 scripts/preload_models.py         
 
 WORKDIR     /
-COPY        entrypoint.sh .
-ENTRYPOINT ["/entrypoint.sh"]
+COPY        entrypoint-web.sh .
+ENTRYPOINT ["/entrypoint-web.sh"]
